@@ -14,7 +14,7 @@ class MyViewController: BaseViewController,UITableViewDataSource,UITableViewDele
     
     private var  headerImV = UIImageView()
     
-   private  let baseUIArray = ["动画","贝塞尔","模糊层","加载web","分段栏","弹出视图"]
+    private  let baseUIArray = ["动画","贝塞尔","模糊层","加载web","分段栏","弹出视图"]
     
     private var myTableView = UITableView()
     
@@ -43,7 +43,7 @@ class MyViewController: BaseViewController,UITableViewDataSource,UITableViewDele
         
         createCustomTable()
         
-        
+        self.navigationController?.navigationBar.isHidden = true
 //
         
         // Do any additional setup after loading the view.

@@ -35,6 +35,7 @@
 		1B7963BA20245A59008C062B /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7963A520245A59008C062B /* BaseViewController.swift */; };
 		1B7963BB20245A59008C062B /* CustomNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7963A620245A59008C062B /* CustomNavController.swift */; };
 		1B7963BC20245A59008C062B /* CustomTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7963A720245A59008C062B /* CustomTabbarController.swift */; };
+		1B7963BE2024724E008C062B /* cartData.json in Resources */ = {isa = PBXBuildFile; fileRef = 1B7963BD2024724E008C062B /* cartData.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +90,7 @@
 		1B7963A520245A59008C062B /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		1B7963A620245A59008C062B /* CustomNavController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavController.swift; sourceTree = "<group>"; };
 		1B7963A720245A59008C062B /* CustomTabbarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabbarController.swift; sourceTree = "<group>"; };
+		1B7963BD2024724E008C062B /* cartData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cartData.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,9 +141,9 @@
 		1B79635C20245985008C062B /* SwiftTextDemo */ = {
 			isa = PBXGroup;
 			children = (
-				1B79638D20245A58008C062B /* AllProductCroller */,
 				1B79639220245A59008C062B /* IndexController */,
 				1B7963A420245A59008C062B /* MainController */,
+				1B79638D20245A58008C062B /* AllProductCroller */,
 				1B79638B20245A58008C062B /* Model */,
 				1B79639720245A59008C062B /* MyController */,
 				1B7963A220245A59008C062B /* Other */,
@@ -237,6 +239,7 @@
 		1B7963A220245A59008C062B /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				1B7963BD2024724E008C062B /* cartData.json */,
 				1B7963A320245A59008C062B /* test.json */,
 			);
 			path = Other;
@@ -360,6 +363,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B79636820245985008C062B /* LaunchScreen.storyboard in Resources */,
+				1B7963BE2024724E008C062B /* cartData.json in Resources */,
 				1B79636520245985008C062B /* Assets.xcassets in Resources */,
 				1B7963AA20245A59008C062B /* CartViewCell.xib in Resources */,
 				1B79636320245985008C062B /* Main.storyboard in Resources */,

@@ -1,0 +1,78 @@
+{
+  "data" : {
+    "product" : [
+      {
+        "product_name" : "华硕 5560 vhost华硕 5560 vhost华硕 5560 vhost华硕 5560 vhost",
+        "product_number" : "3",
+        "product_price" : "￥356"
+      },
+      {
+        "product_name" : "戴尔5560 vhost戴尔 5560 vhost戴尔 5560 vhost戴尔 5560 vhost",
+        "product_number" : "5",
+        "product_price" : "￥87"
+      },
+      {
+        "product_name" : "迪兰R7-350-2G 酷能 （替代N卡型号:GTX1030）国服 吃鸡显卡",
+        "product_number" : "1",
+        "product_price" : "￥256"
+      },
+      {
+        "product_name" : "七彩虹（Colorful）GT710 黄金版Ⅱ-2GD3",
+        "product_number" : "6",
+        "product_price" : "￥25"
+      },
+      {
+        "product_name" : "迪兰RX 580 - 8G X-Serial 战神 （游戏性能吊打:GTX1060-6G）",
+        "product_number" : "4",
+        "product_price" : "￥2562"
+      },
+      {
+        "product_name" : "华硕 5560 vhost华硕 5560 vhost华硕 5560 vhost华硕 5560 vhost",
+        "product_number" : "2",
+        "product_price" : "￥56"
+      },
+      {
+        "product_name" : "爱华仕（OIWAS）单肩包 商务休闲时尚电脑包 男士斜挎包 5421黑色",
+        "product_number" : "5",
+        "product_price" : "￥156"
+      }
+    ],
+    "recommended" : [
+      {
+        "product_name" : "华硕 5560 vhost华硕 5560 vhost华硕 5560 vhost华硕 5560 vhost",
+        "product_number" : "3",
+        "product_price" : "￥356"
+      },
+      {
+        "product_name" : "戴尔5560 vhost戴尔 5560 vhost戴尔 5560 vhost戴尔 5560 vhost",
+        "product_number" : "5",
+        "product_price" : "￥87"
+      },
+      {
+        "product_name" : "迪兰R7-350-2G 酷能 （替代N卡型号:GTX1030）国服 吃鸡显卡",
+        "product_number" : "1",
+        "product_price" : "￥256"
+      },
+      {
+        "product_name" : "七彩虹（Colorful）GT710 黄金版Ⅱ-2GD3",
+        "product_number" : "6",
+        "product_price" : "￥25"
+      },
+      {
+        "product_name" : "迪兰RX 580 - 8G X-Serial 战神 （游戏性能吊打:GTX1060-6G）",
+        "product_number" : "4",
+        "product_price" : "￥2562"
+      },
+      {
+        "product_name" : "华硕 5560 vhost华硕 5560 vhost华硕 5560 vhost华硕 5560 vhost",
+        "product_number" : "2",
+        "product_price" : "￥56"
+      },
+      {
+        "product_name" : "爱华仕（OIWAS）单肩包 商务休闲时尚电脑包 男士斜挎包 5421黑色",
+        "product_number" : "5",
+        "product_price" : "￥156"
+      }
+    ]
+  }
+}
