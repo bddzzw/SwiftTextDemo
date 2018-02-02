@@ -14,6 +14,27 @@
 		1B79636820245985008C062B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B79636620245985008C062B /* LaunchScreen.storyboard */; };
 		1B79637320245985008C062B /* SwiftTextDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B79637220245985008C062B /* SwiftTextDemoTests.swift */; };
 		1B79637E20245985008C062B /* SwiftTextDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B79637D20245985008C062B /* SwiftTextDemoUITests.swift */; };
+		1B7963A820245A59008C062B /* CartModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B79638C20245A58008C062B /* CartModel.swift */; };
+		1B7963A920245A59008C062B /* CartRecommendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B79638E20245A58008C062B /* CartRecommendCell.swift */; };
+		1B7963AA20245A59008C062B /* CartViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B79638F20245A58008C062B /* CartViewCell.xib */; };
+		1B7963AB20245A59008C062B /* CartViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B79639020245A58008C062B /* CartViewCell.swift */; };
+		1B7963AC20245A59008C062B /* AllProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B79639120245A58008C062B /* AllProductViewController.swift */; };
+		1B7963AD20245A59008C062B /* BanerCollViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B79639320245A59008C062B /* BanerCollViewCell.swift */; };
+		1B7963AE20245A59008C062B /* IndexController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B79639420245A59008C062B /* IndexController.swift */; };
+		1B7963AF20245A59008C062B /* CustomCollViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B79639520245A59008C062B /* CustomCollViewCell.swift */; };
+		1B7963B020245A59008C062B /* CustomCollViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B79639620245A59008C062B /* CustomCollViewCell.xib */; };
+		1B7963B120245A59008C062B /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B79639820245A59008C062B /* MyViewController.swift */; };
+		1B7963B220245A59008C062B /* AnimationVController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B79639A20245A59008C062B /* AnimationVController.swift */; };
+		1B7963B320245A59008C062B /* AutoImageScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B79639C20245A59008C062B /* AutoImageScrollView.swift */; };
+		1B7963B420245A59008C062B /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B79639D20245A59008C062B /* UIImageView+Extensions.swift */; };
+		1B7963B520245A59008C062B /* UIButton+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B79639E20245A59008C062B /* UIButton+Extensions.swift */; };
+		1B7963B620245A59008C062B /* Macro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B79639F20245A59008C062B /* Macro.swift */; };
+		1B7963B720245A59008C062B /* UIBarButtonItem+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7963A020245A59008C062B /* UIBarButtonItem+Extensions.swift */; };
+		1B7963B820245A59008C062B /* Bundle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7963A120245A59008C062B /* Bundle+Extensions.swift */; };
+		1B7963B920245A59008C062B /* test.json in Resources */ = {isa = PBXBuildFile; fileRef = 1B7963A320245A59008C062B /* test.json */; };
+		1B7963BA20245A59008C062B /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7963A520245A59008C062B /* BaseViewController.swift */; };
+		1B7963BB20245A59008C062B /* CustomNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7963A620245A59008C062B /* CustomNavController.swift */; };
+		1B7963BC20245A59008C062B /* CustomTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7963A720245A59008C062B /* CustomTabbarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +68,27 @@
 		1B79637920245985008C062B /* SwiftTextDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftTextDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B79637D20245985008C062B /* SwiftTextDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftTextDemoUITests.swift; sourceTree = "<group>"; };
 		1B79637F20245985008C062B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B79638C20245A58008C062B /* CartModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartModel.swift; sourceTree = "<group>"; };
+		1B79638E20245A58008C062B /* CartRecommendCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartRecommendCell.swift; sourceTree = "<group>"; };
+		1B79638F20245A58008C062B /* CartViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CartViewCell.xib; sourceTree = "<group>"; };
+		1B79639020245A58008C062B /* CartViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartViewCell.swift; sourceTree = "<group>"; };
+		1B79639120245A58008C062B /* AllProductViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllProductViewController.swift; sourceTree = "<group>"; };
+		1B79639320245A59008C062B /* BanerCollViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BanerCollViewCell.swift; sourceTree = "<group>"; };
+		1B79639420245A59008C062B /* IndexController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndexController.swift; sourceTree = "<group>"; };
+		1B79639520245A59008C062B /* CustomCollViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCollViewCell.swift; sourceTree = "<group>"; };
+		1B79639620245A59008C062B /* CustomCollViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCollViewCell.xib; sourceTree = "<group>"; };
+		1B79639820245A59008C062B /* MyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
+		1B79639A20245A59008C062B /* AnimationVController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationVController.swift; sourceTree = "<group>"; };
+		1B79639C20245A59008C062B /* AutoImageScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoImageScrollView.swift; sourceTree = "<group>"; };
+		1B79639D20245A59008C062B /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
+		1B79639E20245A59008C062B /* UIButton+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Extensions.swift"; sourceTree = "<group>"; };
+		1B79639F20245A59008C062B /* Macro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Macro.swift; sourceTree = "<group>"; };
+		1B7963A020245A59008C062B /* UIBarButtonItem+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extensions.swift"; sourceTree = "<group>"; };
+		1B7963A120245A59008C062B /* Bundle+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+Extensions.swift"; sourceTree = "<group>"; };
+		1B7963A320245A59008C062B /* test.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test.json; sourceTree = "<group>"; };
+		1B7963A520245A59008C062B /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		1B7963A620245A59008C062B /* CustomNavController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavController.swift; sourceTree = "<group>"; };
+		1B7963A720245A59008C062B /* CustomTabbarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabbarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +139,13 @@
 		1B79635C20245985008C062B /* SwiftTextDemo */ = {
 			isa = PBXGroup;
 			children = (
+				1B79638D20245A58008C062B /* AllProductCroller */,
+				1B79639220245A59008C062B /* IndexController */,
+				1B7963A420245A59008C062B /* MainController */,
+				1B79638B20245A58008C062B /* Model */,
+				1B79639720245A59008C062B /* MyController */,
+				1B7963A220245A59008C062B /* Other */,
+				1B79639B20245A59008C062B /* Tools */,
 				1B79635D20245985008C062B /* AppDelegate.swift */,
 				1B79635F20245985008C062B /* ViewController.swift */,
 				1B79636120245985008C062B /* Main.storyboard */,
@@ -123,6 +172,84 @@
 				1B79637F20245985008C062B /* Info.plist */,
 			);
 			path = SwiftTextDemoUITests;
+			sourceTree = "<group>";
+		};
+		1B79638B20245A58008C062B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1B79638C20245A58008C062B /* CartModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1B79638D20245A58008C062B /* AllProductCroller */ = {
+			isa = PBXGroup;
+			children = (
+				1B79638E20245A58008C062B /* CartRecommendCell.swift */,
+				1B79638F20245A58008C062B /* CartViewCell.xib */,
+				1B79639020245A58008C062B /* CartViewCell.swift */,
+				1B79639120245A58008C062B /* AllProductViewController.swift */,
+			);
+			path = AllProductCroller;
+			sourceTree = "<group>";
+		};
+		1B79639220245A59008C062B /* IndexController */ = {
+			isa = PBXGroup;
+			children = (
+				1B79639320245A59008C062B /* BanerCollViewCell.swift */,
+				1B79639420245A59008C062B /* IndexController.swift */,
+				1B79639520245A59008C062B /* CustomCollViewCell.swift */,
+				1B79639620245A59008C062B /* CustomCollViewCell.xib */,
+			);
+			path = IndexController;
+			sourceTree = "<group>";
+		};
+		1B79639720245A59008C062B /* MyController */ = {
+			isa = PBXGroup;
+			children = (
+				1B79639820245A59008C062B /* MyViewController.swift */,
+				1B79639920245A59008C062B /* OrderUIController */,
+			);
+			path = MyController;
+			sourceTree = "<group>";
+		};
+		1B79639920245A59008C062B /* OrderUIController */ = {
+			isa = PBXGroup;
+			children = (
+				1B79639A20245A59008C062B /* AnimationVController.swift */,
+			);
+			path = OrderUIController;
+			sourceTree = "<group>";
+		};
+		1B79639B20245A59008C062B /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				1B79639C20245A59008C062B /* AutoImageScrollView.swift */,
+				1B79639D20245A59008C062B /* UIImageView+Extensions.swift */,
+				1B79639E20245A59008C062B /* UIButton+Extensions.swift */,
+				1B79639F20245A59008C062B /* Macro.swift */,
+				1B7963A020245A59008C062B /* UIBarButtonItem+Extensions.swift */,
+				1B7963A120245A59008C062B /* Bundle+Extensions.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		1B7963A220245A59008C062B /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				1B7963A320245A59008C062B /* test.json */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		1B7963A420245A59008C062B /* MainController */ = {
+			isa = PBXGroup;
+			children = (
+				1B7963A520245A59008C062B /* BaseViewController.swift */,
+				1B7963A620245A59008C062B /* CustomNavController.swift */,
+				1B7963A720245A59008C062B /* CustomTabbarController.swift */,
+			);
+			path = MainController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,7 +361,10 @@
 			files = (
 				1B79636820245985008C062B /* LaunchScreen.storyboard in Resources */,
 				1B79636520245985008C062B /* Assets.xcassets in Resources */,
+				1B7963AA20245A59008C062B /* CartViewCell.xib in Resources */,
 				1B79636320245985008C062B /* Main.storyboard in Resources */,
+				1B7963B020245A59008C062B /* CustomCollViewCell.xib in Resources */,
+				1B7963B920245A59008C062B /* test.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,8 +389,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B7963B420245A59008C062B /* UIImageView+Extensions.swift in Sources */,
+				1B7963B520245A59008C062B /* UIButton+Extensions.swift in Sources */,
+				1B7963AB20245A59008C062B /* CartViewCell.swift in Sources */,
+				1B7963B820245A59008C062B /* Bundle+Extensions.swift in Sources */,
+				1B7963A820245A59008C062B /* CartModel.swift in Sources */,
+				1B7963BA20245A59008C062B /* BaseViewController.swift in Sources */,
+				1B7963B620245A59008C062B /* Macro.swift in Sources */,
+				1B7963AF20245A59008C062B /* CustomCollViewCell.swift in Sources */,
 				1B79636020245985008C062B /* ViewController.swift in Sources */,
+				1B7963A920245A59008C062B /* CartRecommendCell.swift in Sources */,
+				1B7963BC20245A59008C062B /* CustomTabbarController.swift in Sources */,
+				1B7963B720245A59008C062B /* UIBarButtonItem+Extensions.swift in Sources */,
+				1B7963BB20245A59008C062B /* CustomNavController.swift in Sources */,
+				1B7963AE20245A59008C062B /* IndexController.swift in Sources */,
+				1B7963B320245A59008C062B /* AutoImageScrollView.swift in Sources */,
+				1B7963AC20245A59008C062B /* AllProductViewController.swift in Sources */,
+				1B7963AD20245A59008C062B /* BanerCollViewCell.swift in Sources */,
+				1B7963B120245A59008C062B /* MyViewController.swift in Sources */,
 				1B79635E20245985008C062B /* AppDelegate.swift in Sources */,
+				1B7963B220245A59008C062B /* AnimationVController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

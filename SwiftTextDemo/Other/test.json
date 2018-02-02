@@ -1,0 +1,17 @@
+ [
+  {
+  "clsName" : "IndexController",
+  "imageName" : "btn_home",
+  "title" : "首页"
+  },
+  {
+  "clsName" : "AllProductViewController",
+  "imageName" : "btn_order",
+  "title" : "购物车"
+  },
+  {
+  "clsName" : "MyViewController",
+  "imageName" : "btn_personal_center",
+  "title" : "我的"
+  }
+  ]
