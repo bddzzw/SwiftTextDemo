@@ -8,7 +8,7 @@
 
 import UIKit
 import Foundation
-
+import SwiftyJSON
 
 // 屏幕的物理宽度
 let SCREEN_WIDTH = UIScreen.main.bounds.size.width

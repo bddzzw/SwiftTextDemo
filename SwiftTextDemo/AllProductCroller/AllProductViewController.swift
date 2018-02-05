@@ -16,14 +16,54 @@ class AllProductViewController: BaseViewController,UITableViewDelegate,UITableVi
     
     private lazy var headerTitleLabel = UILabel()
     
+    private lazy var  productArray = [AnyObject]()
+    
+    private lazy var recommendArray = [AnyObject]()
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        loadData()
         createMyTableV()
+        
         // Do any additional setup after loading the view.
     }
+    /*  guard let path  = Bundle.main.path(forResource: "test.json", ofType: nil),
+     let data  = NSData(contentsOfFile: path),
+     let array  = try? JSONSerialization.jsonObject(with: data as Data, options: []) as? [[String:String]]
+     else {
+     return
+     }*/
+    func loadData() -> Void
+    {
+        guard let path = Bundle.main.path(forResource: "cartData.json", ofType: nil),
+            let data = NSData(contentsOfFile: path),
+            let dataDic = try? JSONSerialization.jsonObject(with:data as Data, options: []) as? [String:[[String:String]]]
+            else{
 
+            return
+        }
+        
+        let productAry = (dataDic!["product"])!
+        
+        for (_,value) in productAry.enumerated() {
+            
+            let cartModel = CartModel()
+            cartModel.setModel(product_name:value["product_name"]!,product_number:value["product_number"]!,product_price: value["product_price"]! )
+
+            productArray.append(cartModel)
+        }
+        let recomAry = (dataDic!["product"])!
+        
+        for (_,value) in recomAry.enumerated() {
+            
+            let cartModel = CartModel()
+            cartModel.setModel(product_name:value["product_name"]!,product_number:value["product_number"]!,product_price: value["product_price"]! )
+            
+            recommendArray.append(cartModel)
+        }
+       
+    }
     func createSectionHeader(title:String) -> UIView {
         
         sectionView = UIView(frame: CGRect(x: 0, y: 0, width: SCREEN_WIDTH, height: 40));
@@ -73,7 +113,7 @@ class AllProductViewController: BaseViewController,UITableViewDelegate,UITableVi
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if section == 0 {
-            return 5
+            return productArray.count
         }else{
             return 1
         }
@@ -84,13 +124,20 @@ class AllProductViewController: BaseViewController,UITableViewDelegate,UITableVi
         
         if indexPath.section==0 {
             let myCell = tableView.dequeueReusableCell(withIdentifier: "CartViewCell", for: indexPath) as? CartViewCell
+            let model = productArray[indexPath.row] as! CartModel
             
-            myCell?.CartNumLabel.text = "X\(indexPath.row + 1)"
+            myCell?.CartNumLabel.text = String("X"+model.product_number)
+            
+            myCell?.CartNameLabel.text = model.product_name
+
+            myCell?.CartPeiceLabel.text = String(model.product_price)
             
             cell = myCell!
         }else{
             let cellID = "CartRecommendCell"
             let myCell = tableView.dequeueReusableCell(withIdentifier: cellID, for: indexPath) as? CartRecommendCell
+            
+            myCell?.recomArray = recommendArray
             
             myCell?.returnCartID = {(CartID) in
                 
@@ -148,7 +195,8 @@ class AllProductViewController: BaseViewController,UITableViewDelegate,UITableVi
     }
     func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
         let ActionOne = UITableViewRowAction(style: .normal, title: "删除") { (action, index) in
-            print("删除")
+            self.productArray.remove(at: indexPath.row)
+            self.MyTableView.reloadData()
         }
         ActionOne.backgroundColor=UIColor.red
         

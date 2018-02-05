@@ -12,6 +12,8 @@ class CartRecommendCell: UITableViewCell,UICollectionViewDelegate,UICollectionVi
     
     private lazy var  MyCollectionView = UICollectionView()
     
+    var recomArray = [AnyObject]()
+    
     
     typealias cartIDBlock = (Int)->()
     var returnCartID : cartIDBlock?
@@ -56,7 +58,7 @@ class CartRecommendCell: UITableViewCell,UICollectionViewDelegate,UICollectionVi
         return 1
     }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 8
+        return recomArray.count
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
         
@@ -67,8 +69,10 @@ class CartRecommendCell: UITableViewCell,UICollectionViewDelegate,UICollectionVi
         var myCell = UICollectionViewCell()
         
         let  cell = collectionView .dequeueReusableCell(withReuseIdentifier: "CustomCollViewCell", for: indexPath) as! CustomCollViewCell
-            
-        cell.CustomName.text="产品产品产品产品\(indexPath.row)"
+        
+        let model = recomArray[indexPath.row] as? CartModel
+        
+        cell.CustomName.text=model?.product_name
             
         myCell = cell
        
