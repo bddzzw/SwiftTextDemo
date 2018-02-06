@@ -14,6 +14,7 @@ class AutoImageScrollView: UIView,UIScrollViewDelegate {
     private var myTimer = Timer()
    private var  imageArray : [String] = [String]()
     private var autoScroll = UIScrollView()
+    
     typealias valueBlock = (Int)->()
     var returnIndex : valueBlock?
     

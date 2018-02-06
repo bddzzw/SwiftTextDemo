@@ -18,9 +18,22 @@ class CartViewCell: UITableViewCell {
     
     @IBOutlet weak var CartPeiceLabel: UILabel!
     
+    @IBOutlet weak var CartPlusBtn: UIButton!
+    
+    @IBOutlet weak var CartNumberTextField: UITextField!
+    
+    @IBOutlet weak var CartIsSelectBtn: UIButton!
+    
+    @IBOutlet weak var CartAddBtn: UIButton!
+    
+    typealias cartBlock = (_ btn : UIButton,_ statue : String)->()
+    var returnCart : cartBlock?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
+        
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -29,4 +42,18 @@ class CartViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    @IBAction func cartBtnPlusClick(_ sender: UIButton) {
+       
+        returnCart!(sender,"1")
+        
+    }
+    
+    @IBAction func cartBtnAddClick(_ sender: UIButton) {
+        
+        returnCart!(sender,"2")
+    }
+   
+    @IBAction func cartIsSelectBtnClick(_ sender: UIButton) {
+         returnCart!(sender,"3")
+    }
 }

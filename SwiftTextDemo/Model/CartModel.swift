@@ -12,6 +12,9 @@ class CartModel: NSObject {
     var product_name = String()
     var product_number = String()
     var product_price = String()
+    var product_isYES = Bool()
+    var product_select = Bool()
+
     override init() {
         super.init()
     }
@@ -19,6 +22,7 @@ class CartModel: NSObject {
         self.product_name = product_name
         self.product_number = product_number
         self.product_price = product_price
+        self.product_select = true
     }
 }
 
