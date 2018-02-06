@@ -91,7 +91,7 @@
 		1B7963A620245A59008C062B /* CustomNavController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavController.swift; sourceTree = "<group>"; };
 		1B7963A720245A59008C062B /* CustomTabbarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabbarController.swift; sourceTree = "<group>"; };
 		1B86CD6420286D50004B2219 /* test.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test.json; sourceTree = "<group>"; };
-		1B86CD6720286E1C004B2219 /* cartData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cartData.json; sourceTree = "<group>"; };
+		1B86CD6720286E1C004B2219 /* cartData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = cartData.json; path = ../Model/cartData.json; sourceTree = "<group>"; };
 		54F47C7AD752763F1C9E9A8B /* Pods-SwiftTextDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftTextDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftTextDemo/Pods-SwiftTextDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		9C00BBDF12693D6F9DC9F017 /* Pods-SwiftTextDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftTextDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftTextDemo/Pods-SwiftTextDemo.release.xcconfig"; sourceTree = "<group>"; };
 		A30E9B8CAB2AEE5892A2B561 /* Pods_SwiftTextDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftTextDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -186,7 +186,6 @@
 		1B79638B20245A58008C062B /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				1B86CD6720286E1C004B2219 /* cartData.json */,
 				1B79638C20245A58008C062B /* CartModel.swift */,
 			);
 			path = Model;
@@ -247,6 +246,7 @@
 		1B7963A220245A59008C062B /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				1B86CD6720286E1C004B2219 /* cartData.json */,
 				1B86CD6420286D50004B2219 /* test.json */,
 			);
 			path = Other;
