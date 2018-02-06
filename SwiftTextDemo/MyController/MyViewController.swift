@@ -23,6 +23,13 @@ class MyViewController: BaseViewController,UITableViewDataSource,UITableViewDele
     
     private var allConsetY = CGFloat()
     
+   
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
@@ -140,13 +147,12 @@ class MyViewController: BaseViewController,UITableViewDataSource,UITableViewDele
     }
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         
-        let offsetY = scrollView.contentOffset.y;
+        let offsetY = scrollView.contentOffset.y
         
         self.navigationController?.navigationBar.isHidden = false
         
         if offsetY < 0
         {
-            
             let mheight = myInitFrame.size.height - offsetY
             let mwidth = myInitFrame.size.width + (mheight - myInitFrame.size.height) * 240/SCREEN_WIDTH //240/SCREEN_WIDTH这个是宽高比
             let mx = (mwidth - myInitFrame.size.width)/2

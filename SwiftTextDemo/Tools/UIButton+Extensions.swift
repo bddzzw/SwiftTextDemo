@@ -34,5 +34,15 @@ extension UIButton {
         
         
     }
-    
+    func initWidthCreateUpDownTypeButton(btn:UIButton) -> UIButton {
+        let button = UIButton(type: .custom)
+        
+        button.contentHorizontalAlignment = .center
+        
+        button.titleEdgeInsets = UIEdgeInsetsMake((button.imageView?.frame.size.height)! + 10 ,-(button.imageView?.frame.size.width)!, 0.0,0.0)
+        
+        button.imageEdgeInsets = UIEdgeInsetsMake(-(button.titleLabel?.bounds.size.height)!, 0.5*(button.titleLabel?.bounds.size.width)!,0.5*(button.titleLabel?.bounds.size.height)!, -0.5*(button.titleLabel?.bounds.size.width)!)
+        
+        return button
+    }
 }
