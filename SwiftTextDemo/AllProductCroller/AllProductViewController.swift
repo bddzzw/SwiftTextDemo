@@ -391,6 +391,7 @@ class AllProductViewController: BaseViewController,UITableViewDelegate,UITableVi
         let ActionOne = UITableViewRowAction(style: .normal, title: "删除") { (action, index) in
             self.productArray.remove(at: indexPath.row)
             self.MyTableView.reloadData()
+            self.countCartAllPrice()
         }
         ActionOne.backgroundColor=UIColor.red
         

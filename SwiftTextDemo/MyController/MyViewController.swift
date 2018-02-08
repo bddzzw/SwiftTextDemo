@@ -94,8 +94,10 @@ class MyViewController: BaseViewController,UITableViewDataSource,UITableViewDele
         
         return 2
     }
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if section == 0 {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+    {
+        if section == 0
+        {
             return 6
         }else{
             return baseUIArray.count
@@ -142,8 +144,7 @@ class MyViewController: BaseViewController,UITableViewDataSource,UITableViewDele
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         
         let offsetY = scrollView.contentOffset.y
-        
-        
+    
         if offsetY < 0
         {
             let mheight = myInitFrame.size.height - offsetY
