@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class IndexController: BaseViewController,UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout  {
     private lazy var  MyCollectionView = UICollectionView()
     private lazy var  bannerScrol = AutoImageScrollView()
@@ -15,13 +16,22 @@ class IndexController: BaseViewController,UICollectionViewDataSource,UICollectio
     override func viewDidLoad() {
         super.viewDidLoad()
         
+     
+        
+//        layout.itemSize = CGSize(width: self.view.frame.width/2, height: (self.view.frame.width/2-4)/73*100)
+        
+       
+        createMyCollectionV()
+        // Do any additional setup after loading the view.
+    }
+    func createMyCollectionV() -> Void {
         let  layout = UICollectionViewFlowLayout()
         
         MyCollectionView = UICollectionView.init(frame:CGRect(x: 0, y: -20, width: SCREEN_WIDTH, height: SCREEN_HEIGHT+20), collectionViewLayout: layout)
         //加载xib的方法
         
         MyCollectionView.register(UINib(nibName: "CustomCollViewCell", bundle: nil), forCellWithReuseIdentifier: "CustomCollViewCell")
-         //存代码的方法
+        //存代码的方法
         
         MyCollectionView.register(BanerCollViewCell.self, forCellWithReuseIdentifier: "BanerCollViewCell")
         
@@ -31,12 +41,9 @@ class IndexController: BaseViewController,UICollectionViewDataSource,UICollectio
         
         MyCollectionView.backgroundColor = RGBA(r: 237, g: 237, b: 237, a: 1)
         
-//        layout.itemSize = CGSize(width: self.view.frame.width/2, height: (self.view.frame.width/2-4)/73*100)
-        
-        self.view.addSubview(MyCollectionView)
-        
-        // Do any additional setup after loading the view.
+         self.view.addSubview(MyCollectionView)
     }
+    
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 2
     }
@@ -148,3 +155,11 @@ class IndexController: BaseViewController,UICollectionViewDataSource,UICollectio
     */
 
 }
+
+
+
+
+
+
+
+

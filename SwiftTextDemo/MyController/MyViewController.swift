@@ -27,12 +27,12 @@ class MyViewController: BaseViewController,UITableViewDataSource,UITableViewDele
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-         self.navigationController?.navigationBar.isHidden = true
+         self.navigationController?.setNavigationBarHidden(true, animated: false)
         
     }
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
-         self.navigationController?.navigationBar.isHidden = false
+        self.navigationController?.setNavigationBarHidden(false, animated: false)
         self.navigationController?.navigationBar.alpha = 1 ;
     }
     override func viewDidLoad() {
@@ -44,7 +44,7 @@ class MyViewController: BaseViewController,UITableViewDataSource,UITableViewDele
         
         createCustomTable()
         
-        self.navigationController?.navigationBar.isHidden = true
+         self.navigationController?.setNavigationBarHidden(true, animated: false)
 //
         
         // Do any additional setup after loading the view.
@@ -143,7 +143,6 @@ class MyViewController: BaseViewController,UITableViewDataSource,UITableViewDele
         
         let offsetY = scrollView.contentOffset.y
         
-        self.navigationController?.navigationBar.isHidden = false
         
         if offsetY < 0
         {
@@ -156,8 +155,13 @@ class MyViewController: BaseViewController,UITableViewDataSource,UITableViewDele
             
             headerImV.frame.origin.y = myInitFrame.origin.y - offsetY
             
+            self.navigationController?.setNavigationBarHidden(false, animated: true)
+            
         }
+       
+        
         self.navigationController?.navigationBar.alpha = offsetY/240;
+
     
     }
 }
